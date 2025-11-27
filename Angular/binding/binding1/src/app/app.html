@@ -1,0 +1,22 @@
+
+<main>
+  <!-- დავალება პირველი -->
+  <div class="question1"> 
+    <button (click)="back()">Go back</button>
+    <img [src]="imageString[index]" alt="kitty">
+    <button (click)="forward()">Go Forward</button>
+  </div>
+
+  <!-- მეორე დავალება -->
+  <div class="question2">
+    <button (click)="bgColor()" [style.background-color]="color">this can change color</button>
+  </div>
+
+  <!-- მესამე დავალება -->
+  <div class="question3">
+    <h2 [style.color]="fontColor">this also changes color</h2>
+    <button (click)="changeText()">click here</button>
+  </div>
+
+</main>
+<router-outlet />
