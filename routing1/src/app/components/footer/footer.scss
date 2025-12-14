@@ -1,0 +1,216 @@
+.Subscribe{ 
+    height: 20vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+.socials{
+    height: 10vw;
+    background-color: black;
+    color: white;
+}
+
+.email-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 42vw;
+}
+
+.email-input input[type="email"]{
+    border: 0.1vw solid;
+    border-color: black black white black;
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.Subscribe h1{
+    text-align: center;
+    font-family: Oswald;
+    font-size: 2vw;
+
+}
+
+.checkbox-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.checkbox-input label{
+    font-size: 1vw;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 0.1vw solid #ffffff;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.3vw;
+    cursor: pointer;
+  }
+  
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 1vw;
+    height: 1vw;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .cyberpunk-checkbox-label {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+  }
+
+.checkbox-input button{
+    width: 9vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    transition: all 0.3s ease;
+}
+
+.checkbox-input button:hover{
+    background-color: black;
+    color: white;
+    border: 0.1vw solid white;
+}
+
+label{
+    font-size: 1vw;
+}
+
+form h1{
+    font-size: 2vw;
+    font-family: oswald;
+    font-weight: 400;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: center;
+}
+
+.socials img{
+    width: 3vw;
+    height: 3vw;
+}
+
+.socials p{
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 920px){
+    .email-input label{
+        font-size: 2vw;
+    }
+
+    form h1{
+        font-size: 3vw;
+    }
+
+    .contact-info img{
+      width: 31.52vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+        .Subscribe{
+        height: 300px;
+      }
+      .socials{
+        height: 150px;
+      }
+
+      .Subscribe h1{
+        font-size: 26px;
+      }
+
+      .socials img{
+        width: 40px;
+        height: 40px;
+      }
+
+      .socials p{
+        font-size: 15px;
+      }
+
+      .email-input{
+        width: 90vw;
+      }
+
+      .email-input label, .checkbox-input label{
+        font-size: 16px;
+      }
+
+      .checkbox-input button{
+        align-items: flex-start;
+        width: 90vw;
+        height: 10vw;
+        font-size: 13px;
+        transition: all 0.3s ease;
+    }
+
+    .checkbox-input {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3vw;
+
+      }
+
+      .cyberpunk-checkbox {
+        width: 3vw; 
+        height: 3vw;
+        border: 0.2vw solid #ffffff;
+    }
+    
+    .cyberpunk-checkbox:before {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .cyberpunk-checkbox-label {
+        font-size: 12px !important;
+        color: #fff;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+  @media screen and (max-width: 425px) {
+    .cart-login-container p{
+      font-size: 12px;
+    }
+    
+  }

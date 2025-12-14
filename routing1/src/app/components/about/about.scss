@@ -1,0 +1,158 @@
+.about-bakery2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vw;
+    align-items: center;
+}
+
+.about-text2, .products-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 22vw;
+    color: black;
+}
+
+.about-text2 h1, .products-text h1, .mobile-only{
+    font-family: oswald;
+    font-weight: 550;
+    font-size: 2vw;
+    display: block;
+    color: black;
+}
+
+.about-text2 p, .products-text p{
+    font-family: roboto;
+    font-weight: 200;
+    font-size: 1vw;
+    line-height: 1.4;
+
+}
+
+.about-bakery2 img{
+    width: 52vw;
+    height: 41vw;
+}
+
+.about-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 11vw;
+}
+
+.cookie-about{
+    width: 32vw;
+    height: 41vw;
+}
+
+.mobile-only{
+  display: none;
+  font-size: 7vw;
+  align-self: start;
+}
+
+@media screen and (max-width:785px){
+  .about-text2 p, .products-text p {
+     font-size: 1.1vw;
+  }
+
+  .products-text p{
+    margin-left: -5vw;
+    width: 150px;
+  }
+
+  .products-text h1{
+    margin-left: -5vw;
+  }
+
+
+  .about-textP1, .about-textP, .products-textP1, .products-textP{
+    width: 200px;
+  }
+
+}
+
+@media  screen and (max-width: 500px) {
+    .aboutbakery1 h1, .Gluten-Free1 h1{
+    font-size: 35px;
+  }
+
+  .aboutbakery1 p, .Gluten-Free1 p{
+    font-size: 15px;
+    width: auto;
+  }
+
+  .aboutbakery1 button, .Gluten-Free1 button {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+      .about-bakery2, .about-products{
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    .mobile-only{
+      display: block;
+      padding: 10px 20px 0;
+    }
+
+    .about-text2, .products-text{
+      width: auto;
+    }
+
+    .about-text2 h1{
+      display: none;
+    }
+
+    .about-crossant, .about-products img{
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .about-textP, .about-textP1, .products-text p{
+      width: 100%;
+      height: auto;
+      font-size: 4.5vw !important;
+      opacity: 1;
+      color: black;
+      padding: 0 20px;
+    }
+
+    .products-textP1{
+      padding:20px !important;
+    }
+
+    .products-text{
+      width: 100% !important;
+      order: 2;
+    }
+
+    .products-text h1{
+      font-size: 7vw;
+      align-self: start;
+      padding: 10px 20px 0;
+    }
+
+    .about-products img{
+      width: 100% !important;
+    }
+
+    .about-text2p{
+      padding: 0 20px 10px;
+    }
+
+    .products-text p{
+      margin-left: 0;
+    }
+
+    .products-text h1{
+      margin-left: 0;
+    }
+
+  
+}

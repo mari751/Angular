@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.body{
+  background-color: white;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-color: white;
+  }
+  to {
+    opacity: 1;
+    background-color: white;
+  }
+}
+
+
+@font-face {
+    font-family:roboto;
+    src: url('/fonts/WixMadeforTextVF_W_Wght.8022447a.woff2');
+}
+
+@font-face {
+    font-family:Oswald;
+    src: url('/fonts/Oswald-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url('/open/sans.woff2');
+}
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #000000;
+}
+
+a, li, img{
+    border: none !important;
+}
+
+.nav-list, .adress, .cart-login-container{
+    color: white;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.nav-list{
+    display: flex;
+    gap: 2vw;
+}
+
+a{
+    color: white;
+}
+
+.hamburger{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.cart-login-container{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.cart-img{
+    width: 25px;
+}
+
+@media screen and (max-width: 852px){
+    .hamburger{
+        display: block;
+        margin-left: 1vw;
+    }
+    .nav-list{
+        display: none;
+        flex-direction: column;
+    }
+    .menu-toggle:checked + .hamburger + .nav-list{
+        display: flex;
+        margin-left:1vw;
+    }
+
+    .background-video{
+        position: relative
+    }
+
+    .checkbox-input button{
+        width: 9.5vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .autro-container, .intro-container{
+        background-attachment: scroll;
+    }
+
+    .header-container{
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .cart-login-container{
+        gap: 20px;
+    }
+
+    .cart-login-container p{
+        font-size: 14px;
+    }
+
+
+    
+
+
+}
+@media screen and (max-width: 500px) {
+    .nav-list {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      flex-direction: column;
+      padding: 60px 20px;
+      gap: 20px;
+      z-index: 2;
+      animation: slideIn 0.3s forwards;
+    }
+  
+    @keyframes slideIn {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+
+  
+    .menu-toggle:checked + .hamburger + .nav-list {
+      animation: slideIn 0.3s forwards;
+      margin-left:0;
+      position: fixed;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      position: sticky;
+      z-index: 3;
+      margin-left: 0;
+    }
+
+    .menu-toggle:checked + .hamburger{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+    }
+
+    .nav-list::after {
+        content: "500 TERRY FRANCINE ST. SF, CA 94158\ALog In";
+        white-space: pre-line;
+        color: white;
+        font-family: roboto;
+        font-weight: 300;
+        margin-top: 40px;
+        display: block;
+      }
+      
+      .nav-list::before {
+        content: "";
+        display: block;
+        background-image: url('/images/download.jfif');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+}
+
+  @media screen and (max-width: 379px) {
+    .log-in{
+        display: none;
+    }
+
+    .cart-login-container img{
+        width: 40px;
+    }
+
+    .orderP{
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .order-section201{
+      gap: 30px;
+    }
+
+    .cart-main{
+      height: 160vw;
+    }
+  }

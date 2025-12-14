@@ -1,0 +1,182 @@
+.menu-entrance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.menu-text, .bread-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+}
+
+.bread-text{
+  padding: 30px;
+  gap: 30px;
+}
+
+.menu-text h2, .bread-text h1{
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.menu-text p, .bread-text p{
+  font-family: open-sans;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.main-title{
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+
+.bagel-menu, .bread-menu{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 17vw;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.plain-bagel, .sesame-bagel, .sunflower-bagel, .poppy-bagel, .wheat-bagel, .whole-seeds-bagel, .sourdough-bread, .grain-bread, .wheat-bread, .challa-bread{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 calc(33.33% - 30px);
+  padding: 0 0 5vw 0;
+}
+
+.plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+  width: 250px;
+  height: 250px;
+}
+
+.plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+  font-family: open-sans;
+  font-weight: 300;
+  width: 255px;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+
+.plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+  font-family: open-sans;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+}
+
+.whole-seeds-bagel h3::before, .sunflower-bagel h3::before{
+  content: '★';
+  color: black;
+}
+
+.challa-bread{
+  display: flex;
+  align-items: baseline;
+  max-width: 980px;
+}
+
+.challa-bread-title{
+  text-align: center;
+  width: 250px;
+}
+
+.challa-price{
+  display: flex;
+  width: 255px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width:785px){
+  .plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .challa-bread-title{
+    width: 200px;
+  }
+
+  .challa-bread{
+    margin-right: -55px;  }
+
+  .plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+    width: 180px;
+    height: 180px;
+  }
+  
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width:616px){
+  .plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .challa-bread-title, .challa-price{
+    width: 150px;
+  }
+
+  .plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px){
+    .plain-bagel img, .sesame-bagel img, .sunflower-bagel img, .poppy-bagel img, .wheat-bagel img, .whole-seeds-bagel img, .sourdough-bread img, .grain-bread img, .wheat-bread img, .challa-bread img{
+      width: 90vw;
+      height: auto;
+    }
+  
+    .plain-bagel h3, .sesame-bagel h3, .sunflower-bagel h3, .poppy-bagel h3, .wheat-bagel h3, .whole-seeds-bagel h3, .sourdough-bread h3, .grain-bread h3, .wheat-bread h3, .challa-bread h3{
+      font-size: 22px;
+    }
+  
+    .plain-bagel p, .sesame-bagel p, .sunflower-bagel p, .poppy-bagel p, .wheat-bagel p, .whole-seeds-bagel p, .sourdough-bread p, .grain-bread p, .wheat-bread p, .challa-bread p{
+      font-size: 18px;
+      width: auto;
+    }
+
+    .challa-bread-title{
+      width: 90vw;
+      font-size: 12px;
+    }
+
+    .challa-price{
+      width: 100vw;
+    }
+
+    .challa-bread{
+      margin-right: 0 !important;
+      margin-left: 0 !important ;
+    }
+}

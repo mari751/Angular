@@ -1,0 +1,316 @@
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.218), rgba(255, 255, 255, 0.133)), url('/images/9c608a_1d105a52d5834dfa98f0ead7697277f7.avif');
+    background-size: cover;
+    filter: brightness(1.1) saturate(0.8);
+    background-attachment: fixed;
+}
+
+.intro-text-container, .autro-container{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1;
+    color: black;
+  }
+
+.Title1, .autro-container h1{
+    font-family:Oswald;
+    font-weight: 700;
+    font-size: 12vw;
+    color: black;
+}
+
+.breadP, h2, .aboutbakerytitle, .Gluten-Free h1, .autro-container p{
+    font-family:Oswald;
+    font-weight: 500;
+    font-size: 2vw;
+    color: black;
+}
+
+.breadP{
+    margin-top: -3vw;
+}
+
+.advertisement-container{
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    z-index: 2;
+    background-color: white;
+}
+
+.advertisement-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+;
+}
+
+.advertisement-item img{
+    width: 21vw;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+.order-online-button, .About-bakery button, .Gluten-Free button, .contact-form button{
+    display: flex;
+    width: 12vw;
+    height: 2.5vw;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.itemsP{
+    font-family:Oswald;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: black;
+
+}
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    object-fit: cover
+}
+
+.video-container {
+    width: 100%;
+    height: 50vw;
+    z-index: -1;
+    /* overflow: hidden; */
+}
+
+.About-bakery{
+    background-color: white;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-bakery img{
+    width: 33vw;
+    height: 40vw;
+}
+
+.aboutbakery1, .Gluten-Free1{
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 20px
+}
+
+.aboutbakerytitle, .Gluten-Free h1{
+    font-size: 2.5vw;
+    color: black;
+}
+
+.About-bakery p, .Gluten-Free p{
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(75, 75, 75);
+    font-size: 1vw;
+    width: 27vw;
+}
+
+.Gluten-Free{
+    background-color: white;
+    height: 41.5vw;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+
+.Gluten-Free img{
+    width: 49vw;
+    height: 41.5vw;
+}
+
+.autro-container{
+    background-image: url(/images/9c608a_90d745578a2545719165d1c5ef32e2a8.avif);
+    height: 50vw;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.autro-container h1{
+    margin-top: -3vw;
+}
+
+a{
+  color: white;
+}
+
+@media screen and (max-width: 852px){
+    .background-video{
+        position: relative
+    }
+
+    .checkbox-input button{
+        width: 9.5vw;
+        height: 3vw;
+        font-size: 1.5vw;
+    }
+
+    .autro-container, .intro-container{
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:785px){
+  .About-bakery p, .Gluten-Free p{
+    font-size: 1.5vw;
+  }
+
+  .about-text2 p, .products-text p {
+     font-size: 1.1vw;
+  }
+
+  .products-text p{
+    margin-left: -5vw;
+    width: 150px;
+  }
+
+  .products-text h1{
+    margin-left: -5vw;
+  }
+
+
+  .about-textP1, .about-textP, .products-textP1, .products-textP{
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width:616px){
+
+      .About-bakery img{
+      width: 37vw;
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+        .intro-container{
+        height: 507px;
+        align-items: flex-start;
+        background-position: center center;
+        display: flex;
+      }
+
+      .autro-container {
+        height: 507px;
+        background-position: center center;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .intro-container h1, .autro-container h1{
+        font-size: 76px;
+      }
+
+      .intro-text-container p, .autro-container p{
+        font-size: 18px;
+      }
+
+      .advertisement-container{
+        height: 1200px;
+      }
+
+      .advertisement-container, .advertisement-item, .items{
+        flex-direction: column;
+      }
+
+      .itemsP{
+        font-size: 24px;
+      }
+
+      .advertisement-container h2{
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .items img{
+        width: 100%;
+        height: 290px;
+      }
+
+      .order-online-button{
+        width: 190px;
+        height: 40px;
+        font-size: 15px;
+      }
+
+      .About-bakery, .aboutbakery1, .Gluten-Free, .Gluten-Free1{
+        flex-direction: column;
+      }
+
+      .About-bakery{
+        height: auto;
+        padding: 30px 0 40px 0;
+      }
+
+      .Gluten-Free{
+        height: auto;
+      }
+
+      .About-bakery img{
+        width: 100%;
+        height: 100vw;
+      }
+
+            .aboutbakery1 h1, .Gluten-Free1 h1{
+        font-size: 35px;
+      }
+
+      .aboutbakery1 p, .Gluten-Free1 p{
+        font-size: 15px;
+        width: auto;
+      }
+
+      .aboutbakery1 button, .Gluten-Free1 button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+      }
+
+      .Gluten-Free img{
+        order: 2;
+        width: 100%;
+        height: 60vw;
+      }
+
+      .Gluten-Free1{
+        order: 1;
+      }
+}

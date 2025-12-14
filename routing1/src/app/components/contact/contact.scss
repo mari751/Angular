@@ -1,0 +1,278 @@
+.contact-info{
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  height: 50vw;
+  color: black;
+}
+
+.contact-info1{
+  display: flex;
+  flex-direction:column;
+  gap: 2vw;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title-container{
+  height: 10vw;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.35vw 0;
+}
+
+.title-container h1{
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.form-top{
+  display: flex;
+  gap: 1.35vw;
+}
+
+.first-input, .last-input, .email, .message{
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.first-input, .last-input{
+  height: 2.69vw;
+  width: 10.77vw;
+}
+
+.Email-input, .First-name, .Last-name, .email, .message-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.Email-input label, .First-name label, .Last-name label, .email label, .message-input label{
+  font-family: Oswald;
+  font-weight: 320;
+  letter-spacing: 1px;
+}
+
+
+.email{
+  height: 2.69vw;
+  width: 22.88vw;
+}
+
+.message{
+  width: 22.88vw;
+  height: 5.38vw;
+}
+
+.contact-info img{
+  height: fit-content;
+  width: 30vw;
+}
+
+.contact-form button{
+  width: 10vw;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+.button-form{
+  display: flex;
+  justify-content: flex-end;
+  width: 22.88vw;
+}
+
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 1vw;
+}
+
+.small-contact-text p, .hoursP-container p, .adress-text p{
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 1vw;
+  color: black;
+}
+
+iframe{
+  width: 32vw;
+  height: 32vw;
+}   
+
+.adress-hours{
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  align-items: center;
+  color: black;
+}
+
+.adress-text-container, .adress-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+
+.adress-text-container h1, .contact-phone{
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2vw;
+  letter-spacing: 0.5px;
+}
+
+.contact-phone{
+  display: none;
+} 
+
+@media screen and (max-width: 920px){
+    .email-input label{
+        font-size: 2vw;
+    }
+
+    form h1{
+        font-size: 3vw;
+    }
+
+    .contact-info img{
+      width: 31.52vw;
+    }
+}
+
+
+@media screen and (max-width:785px){
+  .Email-input label, .First-name label, .Last-name label, .email label, .message-input label, .small-contact-text p, .hoursP-container p, .adress-text p, .contact-text p{
+    font-size: 1.5vw;
+  }
+
+  .contact-info img{
+    width: 35vw;
+  }
+
+  .contact-form{
+    gap: 2vw;
+  }
+
+  .contact-info img
+  .orderP{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px){
+    .contact-phone{
+      display: block;
+      order: 1;
+      font-size: 6vw;
+      padding: 3vw 3vw 0;
+    }
+
+    .contact-info{
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+
+    .contact-info1{
+      order: 3;
+    }
+
+    .contact-info img{
+      order: 2;
+      width: 90vw;
+      height: auto;
+    }
+
+    .first-input, .last-input, .email, .message, .submit{
+      width: 90vw;
+      gap: 10px;
+    }
+
+    .form-top{
+      flex-direction: column;
+      gap: 3vw;
+    }
+
+    .first-input, .last-input, .email{
+      height: 15vw;
+      border: 1px solid rgb(42, 41, 41);
+    }
+
+    .Email-input label, .First-name label, .Last-name label, .email label, .message-input label{
+      font-size: 4vw;
+      font-weight: 400;
+    }
+
+    .title-container h1{
+      display: none;
+      font-size: 0;
+    }
+
+    .contact-text p{
+      font-size: 4vw;
+    }
+
+    .contact-text{
+      padding: 5vw 0;
+    }
+
+    .title-container{
+      height: 0;
+    }
+
+    .message{
+      height: 25vw;
+    }
+
+    .small-contact-text p{
+      font-size: 4vw;
+    }
+
+    .adress-hours{
+      flex-direction: column;
+      padding: 10vw 5vw;
+    }
+
+    .adress-text-container{
+      order: 1;
+    }
+
+    iframe{
+      order: 2;
+    }
+
+    .adress-text-container h1{
+      font-size: 7vw;
+    }
+
+    .button-form{
+      width: 90vw;
+    }
+
+    .button-form button{
+      width: 90vw;
+      height: 12vw;
+      font-size: 4vw;
+    }
+
+    .adress-text{
+      gap: 5vw;
+    }
+
+    .adress-text p{
+      font-size: 4vw;
+    }
+
+    iframe{
+      width: 90vw;
+      height: 90vw;
+    }
+}
