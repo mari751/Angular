@@ -1,0 +1,22 @@
+main{
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: gray;
+    padding: 10px;
+    // color: rgb(174, 154, 100);
+    color: black;
+    font-family: 'Charm';
+    img{
+      width: 200px;
+    }
+  }
+}

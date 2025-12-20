@@ -1,0 +1,35 @@
+.active-link {
+  color: white !important;
+}
+
+
+.header1{
+  max-width: 100%;
+  background-color: rgb(50, 50, 50);
+  padding: 30px 10px;
+  ul{
+    display: flex;
+    gap: 60px;
+    font-family: 'BBH Hegarty';
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    a{
+      color: rgb(174, 154, 100);
+      &:hover{
+        color: white;
+        transition: color, 1s ease;
+      }
+    }
+  }
+}
+
+.header2{
+  background-color: rgb(174, 154, 100);
+  padding: 10px;
+  text-align: center;
+  font-family: 'Charm';
+  color: rgb(50, 50, 50);
+  font-size: 20px;
+
+}

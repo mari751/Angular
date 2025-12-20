@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'BBH Hegarty';
+  src: url('/fonts/BBH_Hegarty/BBHHegarty-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Charm';
+  src: url('/fonts/Charm/Charm-Regular.ttf') format('truetype');
+}

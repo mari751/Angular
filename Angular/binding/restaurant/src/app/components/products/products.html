@@ -1,0 +1,19 @@
+<main>
+  @for (product of productData; track $index) {
+    <div [id]="product.id" class="product-card">
+      <img [src]="product.image" alt="foodImg">
+      <h2>{{ product.name }}</h2>
+      @if (product.vegeterian) {
+        <p>vegetarian</p>
+      } @else {
+        <p>not vegetarian</p>
+      }
+      @if (product.nuts) {
+        <p>product contains nuts</p>
+      } @else {
+        <p>product contains no nuts</p>
+      }
+      <p>Price: {{ product.price }}</p>
+    </div>
+  }
+</main>
