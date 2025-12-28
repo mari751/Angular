@@ -1,0 +1,16 @@
+<main>
+
+  @for (room of Rooms; track $index) {
+    <div class="room-card" [id]="room.id">
+      @if (room.images.length > 0) {
+        <img [src]="room.images[0].source" [alt]="room.name">
+      }
+      <h3>{{ room.name }}</h3>
+      <p>{{ room.pricePerNight }} ₾ / night</p>
+      <p>room is available: {{room.available}}</p>
+      <p>maximum guests allowed: {{room.maximumGuests}}</p>
+    </div>
+  }
+
+</main>
+
