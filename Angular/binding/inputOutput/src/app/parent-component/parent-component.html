@@ -1,0 +1,14 @@
+
+<app-child-component
+  [message]="parentMessage"
+  [question]="question"
+  (replyEvent)="onReply($event)"
+   [name]="name">
+</app-child-component>
+
+
+<p>{{ reply }}</p>
+
+<input type="text" [(ngModel)]="name" placeholder="Enter your name">
+<button (click)="sendGreeting('hello ' + name)">Send Greeting</button>
+<p>{{ greeting }}</p>
