@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  flex-direction: column;
+  .products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    div{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 320px;
+      height: 600px;
+      border: 1px solid rgb(14, 14, 34);
+      justify-content: center;
+      img{
+        width: 300px;
+        object-fit: cover;
+      }
+      button{
+        border: none;
+        background-color: rgb(122, 139, 170);
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, border 0.3s;
+        &:hover{
+          background-color: white;
+          border: 1px solid rgb(122, 139, 170);
+        }
+      }
+    }
+  }
+}

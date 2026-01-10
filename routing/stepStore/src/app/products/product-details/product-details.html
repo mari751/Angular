@@ -1,0 +1,54 @@
+
+<main>
+  <div class="container">
+    <button (click)="goBack()">go back</button>
+
+    @if (product) {
+      <div class="product">
+        <div class="product1">
+          <img [src]="product.thumbnail">
+          <div class="product-side">
+            <h1>{{product.title}}</h1>
+            <p>brand: {{product.brand}}</p>
+            <p>rating: {{product.rating}} / 5</p>
+            <p>price: {{product.price.current}} {{product.price.currency}}</p>
+            <p>{{product.stock > 0 ? 'in stock' : 'not in stock :('}}</p>
+          </div>
+        </div>
+        <div class="product2">
+
+          <div class="price-details">
+            @if (product.price.beforeDiscount > product.price.current) {
+              <p>old price: {{product.price.beforeDiscount}} {{product.price.currency}}</p>
+            }
+            
+            @if (product.price.discountPercentage > 0) {
+              <p>sale: {{product.price.discountPercentage}}%</p>
+            }
+          </div>
+          
+          <div class="description">
+            <h2>description</h2>
+            <p>{{product.description}}</p>
+            
+            <h2>more information</h2>
+            <div>
+              <p>category: {{product.category.name}}</p>
+              <p>warranty: {{product.warranty}} years</p>
+              <p>published in: {{product.issueDate}}</p>
+            </div>
+          </div>
+          
+          <div class="images">
+            <h3>more images</h3>
+            <div>
+              @for (image of product.images; track image) {
+                <img [src]="image">
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</main>
